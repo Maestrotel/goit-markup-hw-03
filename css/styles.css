@@ -4,6 +4,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196F3;
+  --accent-button-color:#188CE8;
   --logo-color: #000000;
   --button-color:#F5F4FA;
   --footer-comments-color: rgba(255, 255, 255, 0.6);
@@ -81,6 +82,12 @@ img {
 
 /* header */
 
+.header-panel {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+}
+
 .logo {
   font-family: Raleway, Arial;
   color: var(--accent-color);
@@ -89,24 +96,22 @@ img {
   line-height: 1.19;  
   letter-spacing: 0.03em;
 
-  margin-right: 97px;
+  margin-right: 93px;
 }
 
 .studio-top {
   color: var(--logo-color);
 }
 
-.studio-bottom {
-  color: var(--primary-background-color);
-}
-
 .header-nav {
   display: flex;
+  align-items: center;
 }
+
 
 .nav-pages {
   display: flex;
-
+  align-items: center;
 }
 
 .nav-pages .link{
@@ -126,8 +131,23 @@ img {
   color: var(--accent-color);
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
 .contacts {
   display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-mail {
+  margin-right: 50px;
 }
 
 .contacts .link{
@@ -153,25 +173,31 @@ img {
   text-align: center;
 }
 
+.solutions-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 696px;
+}
+
 .solutions-title {
   color: var(--primary-background-color);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  line-height: 1.36; 
   letter-spacing: 0.06em;
-  
+  margin-bottom: 30px;
 }
 
 .btn-service {
-  background: var(--button-color);
-  color: var(--title-text-color);
+  background: var(--accent-color);
+  color: var(--primary-background-color);
   border-radius: 4px;
   cursor: pointer;
-  width: 200px;
-  height: 50px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+  min-width: 200px;
 
   font-weight: 700;
   font-size: 16px;
@@ -182,9 +208,7 @@ img {
 
 .btn-service:hover,
 .btn-service:focus {
-  background: var(--accent-color);
-  color: var(--primary-background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--accent-button-color);
 }
 
 .heading-style {
@@ -286,10 +310,18 @@ img {
 
 /* footer */
 
-.theme {
+.studio-bottom {
+  color: var(--primary-background-color);
+}
+
+.footer-side {
   background-color: var(--secondary-background-color);
 }
 
+.footer-studio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .info .link{
   font-style: normal;
