@@ -1,12 +1,14 @@
 :root {
   --primary-background-color: #FFFFFF;
   --secondary-background-color: #2F303A;
+  --portfolio-background-color:#E5E5E5;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196F3;
   --accent-button-color:#188CE8;
   --logo-color: #000000;
   --button-color:#F5F4FA;
+  --portfolio-line: #ECECEC;
   --footer-comments-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -19,6 +21,10 @@ body {
   background-color: var(--primary-background-color);
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+}
+
+.portfolio-background {
+  background-color: var(--portfolio-background-color);
 }
 
 h1,
@@ -69,6 +75,18 @@ ol {
   margin-right: auto;
 }
 
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.items {
+  padding-bottom: 47px;
+}
+
+.gadgets {
+  padding-top: 47px;
+}
 /* button {
   cursor: pointer;
 }
@@ -85,7 +103,10 @@ img {
 .header-panel {
   padding-top: 24px;
   padding-bottom: 25px;
+}
 
+.line {
+  border-bottom: 1px solid var(--portfolio-line);
 }
 
 .logo {
@@ -218,6 +239,16 @@ img {
   line-height: 1.51;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.items-card {
+  display: flex;
+  column-gap: 30px;
+}
+
+.items-indent {
+  width: 270px;
 }
 
 .items-title {
@@ -226,6 +257,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .items-description {
@@ -234,12 +266,37 @@ img {
   letter-spacing: 0.03em;
 }
 
+.gadgets-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.person {
+  /* width: 270px; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person-text {
+  /* text-align: center; */
+  padding: 30px 70px;
+  /* width: 270px; */
+}
+
 .person-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -250,7 +307,9 @@ img {
   letter-spacing: 0.03em;
 }
 
-
+.team-section {
+background-color: var(--button-color);
+}
 
 
 
@@ -262,7 +321,8 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: 0;
-  height: 38px;
+  padding: 6px 22px;
+  min-width: 73px;
 
   font-family: inherit;
   font-weight: 500;
@@ -278,17 +338,6 @@ img {
   color: var(--primary-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.btn-all {width: 73px;}
-
-.btn-web {width: 128px;}
-
-.btn-apps {width: 145px;}
-
-.btn-design {width: 103px;}
-
-.btn-mark {width: 130px;}
-
 
 .prod-name {
   color: var(--title-text-color);

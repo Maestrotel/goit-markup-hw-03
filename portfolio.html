@@ -16,22 +16,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav-bar">
-        <a href="./index.html" class="logo link">Web<span class="studio-top">Studio</span></a>
-        <ul class="nav-pages list">
-          <li><a href="./index.html" class="link">Studio</a></li>
-          <li><a href="" class="link current">Portfolio</a></li>
-          <li><a href="" class="link">Contacts</a></li>
+    <header class="header-panel line">
+      <div class="header-nav container">
+        <nav class="nav-bar">
+          <a href="./index.html" class="logo link">Web<span class="studio-top">Studio</span></a>
+          <ul class="nav-pages list">
+            <li class="nav-item"><a href="./index.html" class="link">Studio</a></li>
+            <li class="nav-item"><a href="" class="link current">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts-mail">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="contacts-tel">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <div class="contacts">
-        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
       </div>
     </header>
     <main>
-      <section>
+      <section class="portfolio-background">
         <div class="container">
           <h1 class="visually-hidden">Products</h1>
           <ul class="btn-line list">
@@ -101,24 +107,26 @@
         </div>
       </section>
     </main>
-    <footer class="theme">
-      <a href="./index.html" class="logo link">Web<span class="studio-bottom">Studio</span></a>
-      <address>
-        <ul class="info list">
-          <li>
-            <a
-              href="https://goo.gl/maps/yEtKt7MqqouqLtDF9"
-              class="add link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >695 Park Ave, New York, NY 10065, <br />
-              United States
-            </a>
-          </li>
-          <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-          <li><a href="tel:+1212-772-4150" class="link">+1 212-772-4150</a></li>
-        </ul>
-      </address>
+    <footer class="footer-side">
+      <div class="footer-studio container">
+        <a href="./index.html" class="logo link">Web<span class="studio-bottom">Studio</span></a>
+        <address>
+          <ul class="info list">
+            <li>
+              <a
+                href="https://goo.gl/maps/yEtKt7MqqouqLtDF9"
+                class="add link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >695 Park Ave, New York, NY 10065, <br />
+                United States
+              </a>
+            </li>
+            <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+            <li><a href="tel:+1212-772-4150" class="link">+1 212-772-4150</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
