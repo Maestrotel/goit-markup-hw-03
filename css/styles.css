@@ -24,7 +24,7 @@ body {
 }
 
 .portfolio-background {
-  background-color: var(--portfolio-background-color);
+  background-color: var(--primary-background-color);
 }
 
 h1,
@@ -305,6 +305,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.person-img {
+  display:block;
+}
+
 .team-section {
 background-color: var(--button-color);
 }
@@ -372,7 +376,7 @@ background-color: var(--button-color);
 }
 
 .prod-text {
-  border: 1px solid var (--portfolio-border);
+  border: 1px solid var(--portfolio-border);
   border-top: none;
   padding: 20px 24px;
   background-color: var(--primary-background-color);
